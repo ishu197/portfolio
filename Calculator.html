@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .calculator {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      width: 260px;
+    }
+    .display {
+      width: 100%;
+      height: 50px;
+      font-size: 1.5rem;
+      text-align: right;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #49eb9f;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    button {
+      padding: 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      background: #e0e0e0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #d0d0d0;
+    }
+    .operator {
+      background: #ff9500;
+      color: white;
+    }
+    .operator:hover {
+      background: #e08400;
+    }
+    .equals {
+      grid-column: span 2;
+      background: #007aff;
+      color: white;
+    }
+    .equals:hover {
+      background: #0062cc;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="calculator">
+    <input type="text" class="display" id="display" disabled>
+    <div class="buttons">
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button class="operator" onclick="appendValue('/')">÷</button>
+
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button class="operator" onclick="appendValue('*')">×</button>
+
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button class="operator" onclick="appendValue('-')">−</button>
+
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
+      <button class="equals" onclick="calculate()">=</button>
+      <button class="operator" onclick="appendValue('+')">+</button>
+
+      <button onclick="clearDisplay()" style="grid-column: span 4; background: #ff3b30; color: white;">C</button>
+
+         </div>
+  </div>
+ -->
+
+
+<form >
+  <input type="text" placeholder="enter your name" id="name">
+  <input type="text" placeholder="enter your age" id="age">
+  <input type="text"  placeholder="enter your mobile" id="mobile">
+  <input type="text" placeholder="enter your address"id="address">
+  <button onclick="myself()">submit</button>
+</form>
+<script>
+  function ishu(){
+    let mark=document.getElementById('guna').value;
+    if(mark>90){
+      alert("first class");
+    } 
+    else if(mark >80){
+    alert("second class");
+  
+    } 
+    else{
+      alert("fail");
+    }
+  }
+   
+
+   function myself(){
+let name=document.getElementById('name').value;
+let age=document.getElementById('age').value;
+let mobile=document.getElementById('mobile').value;
+let address=document.getElementById('address').value;
+if(age >18){
+alert("eligibility");''
+}
+else{
+  alert("not eligibility");
+}
+
+}
+   
+</script>
+  <!-- <script>
+
+ 
+
+    function appendValue(val) {
+      document.getElementById('display').value += val;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+
+    function calculate() {
+      
+        let data=document.getElementById('display').value;
+        const result = eval(data);
+        document.getElementById('display').value = result;
+      
+    }
+
+
+  </script> -->
+</body>
+</html>
