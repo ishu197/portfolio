@@ -47,4 +47,22 @@
 #     print(200000)
 # elif bike =="r15":
 #     print(150000)
+# a = ["ishu","guna","anish","ishu"]
+# a.remove("guna")
+# print(a)
+# a = {"ishu","sekar","rovin","ishu"}
+# a.append("ishu")
+# print(a)
+# 
+# 
+# 
+# CALCULATOR
+# a=int(input("enter the number"))
+# b=int(input("enter the value"))
+# c=input("enter the numerator")
+# if c =="+":
+#     print(a+b)
+# elif c =="-":
+#     print(a-b)
 
+ 

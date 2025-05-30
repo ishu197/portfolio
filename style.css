@@ -229,4 +229,18 @@ transition: transform 0.3s;
       0% { transform: translateX(0%); }
       100% { transform: translateX(-100%); }
     }
+    .form-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius:100px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+.form-container{
+  
+  height: 30vh;
+  border-radius: 100px;
 
+}
